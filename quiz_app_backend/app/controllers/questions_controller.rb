@@ -1,7 +1,7 @@
 class QuestionsController < ApplicationController
   def index
-    @questions = Question.all
-    render json: @questions
+    @questions = Question.includes(:answers) # Assuming answers are a related model
+    render json: @questions.as_json(include: :answers)
   end
 
   def show
