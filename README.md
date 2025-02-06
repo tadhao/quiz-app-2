@@ -42,7 +42,7 @@ cd rails-quiz-app
   rails db:seed
   ```
 #### Frontend (React)
-	- Install the JavaScript dependencies:
+Install the JavaScript dependencies:
   ```bash
   yarn install
   ```
